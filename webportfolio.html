@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/finalportfolio.css">
+    <title>3D Portfolio</title>
+</head>
+    <body>
+        <div class="screen">
+
+            </div>
+        </div>
+        <div class="model-container">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.13/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/QxuPuJmLpVEKHmrn/scene.splinecode"></spline-viewer>
+            <div class="unzoomed-screen transform" id="input-container">
+                <div class="titlebar">
+                    <div class="close">x</div>
+                </div>
+                <div class="text-container">
+                    <div class="first-row">
+                        <div class="text">
+                            linus@websiteporfolio:-$ 
+                        </div>
+                        <input class="dynamic-input" type="text" maxlength="49">
+                    </div>
+                    <div>
+                        <p class="about">Hello! I'm Linus Figueroa, a Computer Science student with a passion for coding and a keen interest in exploring new technologies. I love solving problems, building projects, and learning new things every day.
+    
+    🎓 Education: Currently pursuing a Bachelor's degree in Computer Science at National University.
+    💻 Interests: Web Development, Machine Learning, Data Science.
+    🌱 Learning: Currently learning HTML, CSS, and JavaScript and exploring deep learning techniques.
+    🔭 Projects: Working on a web app that helps students organize their study schedules more effectively.
+    🛠️ Tech Stack: Canva, C++, CSS3, Figma, HTML5, Java, JavaScript, MySQL, Notion, Python
+    
+    My journey began with [Brief Description of How You Started or Your Initial Experiences]. Since then, I’ve been driven by a commitment to [Your Passion or Mission]. I am particularly interested in [Specific Area of Interest or Industry Trend], which has motivated me to continually expand my knowledge and stay updated with the latest advancements in the field.</p>
+                        <p class="certification">Certificate</p>
+                        <p class="projects">Github</p>
+                        <p class="social-media">Github Linkedin Gmail</p>
+                        <p class="invalid-command">invalid command!!</p>
+                        <p id="commands">-about -certification -projects -social media -clear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="finalportfolio.js"></script>
+    </body>
+</html>
