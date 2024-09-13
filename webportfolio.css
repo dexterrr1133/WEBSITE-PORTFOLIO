@@ -16,24 +16,32 @@ html, body {
 
 .unzoomed-screen {
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: rgba(119, 110, 110, 0.123);
-    top: 29.9%; 
-    left: 37.8%;
-    width: 28.8%; 
-    height: 19.6%;
-    overflow: auto;
-    transform: rotate3d(35, 300, 25, 64deg); 
+    top: 10.5%; 
+    left: 26.5%;
+    width: 45%; 
+    height: 64.6%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     transform-origin: center;
     box-sizing: border-box; 
 }
 
+#toggle-button {
+    position: relative;
+    left: 69.2%;
+    top:80%;
+    border: red solid 1px;
+    width: 32px;
+    height: 35px;
+}
+
 .text-container {
     position: absolute;
-    border: red solid 2px;
-    transform: scale(0.8);
-    top: 10%;
+    transform: scale(1);
+    width: 100%;
 }
 
 .first-row {
@@ -42,8 +50,8 @@ html, body {
 }
 
 .text, .dynamic-input {
-    color: green;
-    caret-color: green;
+    color: rgb(0, 197, 0);
+    caret-color: rgb(0, 197, 0);
     font-size: 20px;
     font-family: monospace;
     position: static;
@@ -85,7 +93,7 @@ html, body {
 .titlebar {
     width: 100%;
     height: 20px;
-    background-color: darkgreen;
+    background-color: rgb(0, 197, 0);
     position: absolute;
     text-align: right;
 }
@@ -98,32 +106,38 @@ html, body {
     user-select: none;
 }
 
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #commands {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: justify;
-    margin-top: 20px;
-    color: green;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 197, 0);
     font-family: monospace;
     font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 
-.about, .certification, .projects, .social-media, .invalid-command {
+.about, .certification, .projects, .social-media{
     position: relative;
     display: none;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0;
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
-    color: green;
+    color: rgb(0, 197, 0);
     font-family: monospace;
-    font-size: 20px;
+    font-size: 18px;
     word-wrap: break-word;
     white-space: pre-wrap; 
     overflow-wrap: break-word; 

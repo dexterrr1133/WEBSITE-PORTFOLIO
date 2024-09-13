@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/finalportfolio.css">
+    <link rel="stylesheet" href="webportfolio.css">
     <title>3D Portfolio</title>
 </head>
     <body>
-        <div class="screen">
-
-            </div>
-        </div>
         <div class="model-container">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.13/build/spline-viewer.js"></script>
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js"></script>
             <spline-viewer url="https://prod.spline.design/QxuPuJmLpVEKHmrn/scene.splinecode"></spline-viewer>
             <div class="unzoomed-screen transform" id="input-container">
                 <div class="titlebar">
@@ -25,8 +21,12 @@
                         </div>
                         <input class="dynamic-input" type="text" maxlength="49">
                     </div>
-                    <div>
-                        <p class="about">Hello! I'm Linus Figueroa, a Computer Science student with a passion for coding and a keen interest in exploring new technologies. I love solving problems, building projects, and learning new things every day.
+                    <div class="container">
+                        <p class="about">
+                                  __   __       ___ 
+                             /\  |__) /  \ |  |  |  
+                            /~~\ |__) \__/ \__/  |  
+    <br>Hello! I'm Linus Figueroa, a Computer Science student with a passion for coding and a keen interest in exploring new technologies. I love solving problems, building projects, and learning new things every day.
     
     🎓 Education: Currently pursuing a Bachelor's degree in Computer Science at National University.
     💻 Interests: Web Development, Machine Learning, Data Science.
@@ -35,15 +35,30 @@
     🛠️ Tech Stack: Canva, C++, CSS3, Figma, HTML5, Java, JavaScript, MySQL, Notion, Python
     
     My journey began with [Brief Description of How You Started or Your Initial Experiences]. Since then, I’ve been driven by a commitment to [Your Passion or Mission]. I am particularly interested in [Specific Area of Interest or Industry Trend], which has motivated me to continually expand my knowledge and stay updated with the latest advancements in the field.</p>
-                        <p class="certification">Certificate</p>
-                        <p class="projects">Github</p>
-                        <p class="social-media">Github Linkedin Gmail</p>
-                        <p class="invalid-command">invalid command!!</p>
+                        <p class="certification">
+ __   ___  __  ___    ___    __       ___  ___  __  
+/  ` |__  |__)  |  | |__  | /  `  /\   |  |__  /__` 
+\__, |___ |  \  |  | |    | \__, /~~\  |  |___ .__/ 
+                        <br>Certificate</p>
+                        <p class="projects"> 
+ __   __   __        ___  __  ___  __  
+|__) |__) /  \    | |__  /  `  |  /__` 
+|    |  \ \__/ \__/ |___ \__,  |  .__/ 
+                        <br>test</p>
+                        <p class="social-media">
+ __   __   __                     ___  __         
+/__` /  \ /  ` |  /\  |     |\/| |__  |  \ |  /\  
+.__/ \__/ \__, | /~~\ |___  |  | |___ |__/ | /~~\
+<br>Github: dexterrr1133
+Linkedin: Linus Figueroa
+Gmail: linusfigueroa.tech@gmail.com
+                        </p>
                         <p id="commands">-about -certification -projects -social media -clear</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="toggle-button"></div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="finalportfolio.js"></script>
     </body>

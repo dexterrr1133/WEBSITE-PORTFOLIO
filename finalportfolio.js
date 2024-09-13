@@ -1,11 +1,3 @@
-$(document).keydown(function(event) {
-    // Check if the pressed key is the up arrow key (key code 38)
-    if (event.keyCode === 38) {
-        $(".unzoomed-screen").toggleClass('transform-active');
-        $(".icon").toggleClass('icon-active');
-    }
-});
-
 document.querySelector(".dynamic-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
@@ -36,4 +28,20 @@ document.querySelector(".dynamic-input").addEventListener("keydown", function (e
         this.value = "";
     }
 });
+
+const button = document.getElementById("toggle-button");
+const targetElements = document.getElementsByClassName("unzoomed-screen");
+
+button.addEventListener("click", function() {
+  for (let i = 0; i < targetElements.length; i++) {
+    // Check the current display property and toggle it
+    if (targetElements[i].style.display === "flex") {
+      targetElements[i].style.display = "none";
+    } else {
+      targetElements[i].style.display = "flex";
+    }
+  }
+});
+
+
 
