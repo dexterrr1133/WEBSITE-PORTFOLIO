@@ -28,7 +28,7 @@ html, body {
     position: absolute;
     display: none;
     flex-direction: column;
-    background-color: rgba(119, 110, 110, 0.123);
+    background-color: rgba(34, 31, 31, 0.925);
     top: 5.5%;
     left: 4.5%;
     width: 90%;
