@@ -10,55 +10,64 @@
         <div class="model-container">
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js"></script>
             <spline-viewer url="https://prod.spline.design/QxuPuJmLpVEKHmrn/scene.splinecode"></spline-viewer>
-            <div class="unzoomed-screen transform" id="input-container">
-                <div class="titlebar">
-                    <div class="close">x</div>
+            <div class="screen">
+                <div id="icon" style="color: green; font-size: 12px;">
+                    <img class="terminal" src="img/utilities-x-terminal-icon.png"/>
+                    <p class="text-icon">Terminal</p>
                 </div>
-                <div class="text-container">
-                    <div class="first-row">
-                        <div class="text">
-                            linus@websiteporfolio:-$ 
-                        </div>
-                        <input class="dynamic-input" type="text" maxlength="49">
+                <div class="window" id="input-container">
+                    <div class="titlebar">
+                        <div id="close">x</div>
                     </div>
-                    <div class="container">
-                        <p class="about">
+                    <div class="text-container">
+                        <div class="first-row">
+                            <div class="text">
+                                linus@websiteporfolio:-$ 
+                            </div>
+                            <input class="dynamic-input" type="text" maxlength="49">
+                        </div>
+                        <div class="container">
+                            <p class="about">
                                   __   __       ___ 
                              /\  |__) /  \ |  |  |  
                             /~~\ |__) \__/ \__/  |  
-    <br>Hello! I'm Linus Figueroa, a Computer Science student with a passion for coding and a keen interest in exploring new technologies. I love solving problems, building projects, and learning new things every day.
-    
-    🎓 Education: Currently pursuing a Bachelor's degree in Computer Science at National University.
-    💻 Interests: Web Development, Machine Learning, Data Science.
-    🌱 Learning: Currently learning HTML, CSS, and JavaScript and exploring deep learning techniques.
-    🔭 Projects: Working on a web app that helps students organize their study schedules more effectively.
-    🛠️ Tech Stack: Canva, C++, CSS3, Figma, HTML5, Java, JavaScript, MySQL, Notion, Python
-    
-    My journey began with [Brief Description of How You Started or Your Initial Experiences]. Since then, I’ve been driven by a commitment to [Your Passion or Mission]. I am particularly interested in [Specific Area of Interest or Industry Trend], which has motivated me to continually expand my knowledge and stay updated with the latest advancements in the field.</p>
-                        <p class="certification">
+        <br>Hello! I'm Linus Figueroa, a Computer Science student with a passion for coding and a keen interest in exploring new technologies. I love solving problems, building projects, and learning new things every day.
+        
+🎓 Education: Currently pursuing a Bachelor's degree in Computer Science at National University.
+💻 Interests: Web Development, Machine Learning, Data Science.
+🌱 Learning: Currently learning HTML, CSS, and JavaScript and exploring machine learning techniques.
+🔭 Projects: Locker Reservation System | Personal Web Portfolio
+🛠️ Tech Stack: Canva, CSS3, Figma, HTML5, Java, JavaScript, MySQL, Notion, Python</p>
+
+                            <p class="certification">
  __   ___  __  ___    ___    __       ___  ___  __  
 /  ` |__  |__)  |  | |__  | /  `  /\   |  |__  /__` 
 \__, |___ |  \  |  | |    | \__, /~~\  |  |___ .__/ 
-                        <br>Certificate</p>
-                        <p class="projects"> 
- __   __   __        ___  __  ___  __  
-|__) |__) /  \    | |__  /  `  |  /__` 
-|    |  \ \__/ \__/ |___ \__,  |  .__/ 
-                        <br>test</p>
-                        <p class="social-media">
+                        <br>IT Specialist - Java</p>
+
+                            <p class="projects"> 
+         __   __   __        ___  __  ___  __  
+        |__) |__) /  \    | |__  /  `  |  /__` 
+        |    |  \ \__/ \__/ |___ \__,  |  .__/ 
+<br>- National University School Locker Reservation System
+- Personal Web Portfolio
+- SnakeNLadder
+</p>
+
+                            <p class="social-media">
  __   __   __                     ___  __         
 /__` /  \ /  ` |  /\  |     |\/| |__  |  \ |  /\  
 .__/ \__/ \__, | /~~\ |___  |  | |___ |__/ | /~~\
-<br>Github: dexterrr1133
+    <br>Github: dexterrr1133
 Linkedin: Linus Figueroa
 Gmail: linusfigueroa.tech@gmail.com
-                        </p>
-                        <p id="commands">-about -certification -projects -social media -clear</p>
+                            </p>
+                            <p id="commands">-about -certification -projects -social media</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="toggle-button"></div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="finalportfolio.js"></script>
     </body>

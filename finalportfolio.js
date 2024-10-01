@@ -29,19 +29,31 @@ document.querySelector(".dynamic-input").addEventListener("keydown", function (e
     }
 });
 
-const button = document.getElementById("toggle-button");
-const targetElements = document.getElementsByClassName("unzoomed-screen");
+const button = document.getElementById("icon");
+const close = document.getElementById("close");
+const targetElements = document.getElementsByClassName("window");
 
+// Toggle display between 'flex' and 'none' when the toggle-button is clicked
 button.addEventListener("click", function() {
   for (let i = 0; i < targetElements.length; i++) {
-    // Check the current display property and toggle it
-    if (targetElements[i].style.display === "flex") {
-      targetElements[i].style.display = "none";
-    } else {
+    const computedStyle = window.getComputedStyle(targetElements[i]);
+
+    // Toggle the display between flex and none
+    if (computedStyle.display === "none") {
       targetElements[i].style.display = "flex";
+    } else {
+      targetElements[i].style.display = "none";
     }
   }
 });
+
+// Always hide the elements when the close button is clicked
+close.addEventListener("click", function() {
+  for (let i = 0; i < targetElements.length; i++) {
+    targetElements[i].style.display = "none"; // Always hide
+  }
+});
+
 
 
 
