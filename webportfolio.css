@@ -28,7 +28,7 @@ html, body {
     position: absolute;
     display: none;
     flex-direction: column;
-    background-color: rgba(34, 31, 31, 0.925);
+    background-color: rgba(58, 54, 54, 0.877);
     top: 5.5%;
     left: 4.5%;
     width: 90%;
@@ -38,7 +38,7 @@ html, body {
     transform-origin: center;
     box-sizing: border-box;
 }
-a
+
 #icon {
     display: flex;
     position: relative;
